@@ -39,7 +39,7 @@ else
 if($conn->tableColumnExists($theTable, 'madai_order_id'))
 	Mage::log('Column madai_product_id already exists in quote item');
 else
-	$conn->addColumn($theTable, 'madai_order_id', 'VARHCAR(100)');
+	$conn->addColumn($theTable, 'madai_order_id', 'VARCHAR(100)');
 
 
 $theTable = $this->getTable('sales_flat_order_item');
@@ -53,7 +53,7 @@ else
 if($conn->tableColumnExists($theTable, 'madai_order_id'))
 	Mage::log('Column madai_product_id already exists in order_item');
 else
-	$conn->addColumn($theTable, 'madai_order_id', 'VARHCAR(100)');
+	$conn->addColumn($theTable, 'madai_order_id', 'VARCHAR(100)');
 
 
 $installer->endSetup();
