@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/madai",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "madai  is a cloud-based engagement, conversion and rewarding platform based on a unique crowdrebating model.",
+    "authors": [
+    {
+        "name": "Madai",
+        "email": "info@madai.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

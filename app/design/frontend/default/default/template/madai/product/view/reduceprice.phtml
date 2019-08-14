@@ -1,0 +1,15 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo Mage::helper('madai')->getMadaiModaJsUrl(); ?>"></script>
+<script type="text/javascript">
+	madai.web.modal.config = {
+    "<?php echo Mage::helper('madai')->getSignerId() ?>": {   // id della campagna
+    products: [
+    	"<?php echo $this->getMadaiId();?>", // id del prodotto
+        ],
+        height: <?php echo Mage::helper('madai')->getFormHeight() ?>,
+        is_catalog_hidden: <?php echo Mage::helper('madai')->getIsCatalogHidden() ?>
+        }
+   };
+</script>
+<br/>
+<button onclick="javascript:madai.web.modal.open_product('<?php echo $this->getMadaiId();?>');" class="button btn-cart" title="Riduci il prezzo" type="button"><span><span>Riduci il prezzo</span></span></button>

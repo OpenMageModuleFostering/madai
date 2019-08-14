@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<catalog_product_view>
+		<reference name="product.info">
+			<block type="madai/product_view" name="madai" template="madai/product/view/reduceprice.phtml" />
+		</reference>
+	</catalog_product_view>
+	<checkout_onepage_success>
+        <reference name="after_body_start">
+            <block type="madai/trackorder" name="madai_trackorder" as="madai_trackorder" />
+        </reference>
+	</checkout_onepage_success>
+</layout>
