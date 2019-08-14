@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<Sevenlike_Madai>
-			<version>1.0.3</version>
+			<version>1.0.4</version>
 		</Sevenlike_Madai>
 	</modules>
 	<global>
@@ -128,7 +128,7 @@
 		</routers>
 	</frontend>
 	
-	    <adminhtml>
+	<adminhtml>
         <acl>
             <resources>
                 <admin>
@@ -148,6 +148,14 @@
                 </admin>
             </resources>
         </acl>
-    </adminhtml>
-    
+		<translate>
+            <modules>
+                <Sevenlike_Madai>
+                    <files>
+                        <default>Sevenlike_Madai.csv</default>
+                    </files>
+                </Sevenlike_Madai>
+            </modules>
+        </translate> 
+    </adminhtml>    
 </config>
