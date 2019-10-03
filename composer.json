@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/madai",
+    "name": "openmage-module-fostering\/madai",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "madai  is a cloud-based engagement, conversion and rewarding platform based on a unique crowdrebating model.",
     "authors": [
